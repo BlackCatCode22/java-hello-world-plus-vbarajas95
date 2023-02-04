@@ -12,14 +12,15 @@ import java.util.Scanner;
 
 public class HelloWorld {
   public static void main(String[] args) {
-    String userName = "Vanessa";
-    String greeting = "It is so great to welcome you into this program";
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println("Hello user, what is your preferred name?");
-    userName = scanner.nextLine();
-
-    System.out.println("Good morning" + scanner + "It is so great to welcome you into this program");
+    // Input: Obtain user name
+    Scanner scanner_one = new Scanner(System.in);
+    System.out.println("Hello user, what is your name?");
+    //Variable declaration center
+    String userName = scanner_one.nextLine();
+    //Create greeting
+    String greeting = ",it is so great to finally meet you! Welcome to Java!";
+  // Output:
+    System.out.println("Good morning " + String.valueOf(userName) + String.valueOf(greeting));
 
   }
 }
